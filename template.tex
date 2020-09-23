@@ -1,0 +1,83 @@
+%Overarching document template
+\documentclass[11pt]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% Package Inclusion                                        
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amsmath} % Required for many math properties. AMS stands for American Mathematical Society.
+\usepackage{amssymb} %Required for using many math symbols.
+\usepackage{geometry} % Required for adjusting page dimensions.
+\usepackage[utf8]{inputenc} % Required for inputting international characters.
+\usepackage[none]{hyphenat} % Removes automatic hyphenation (a personal pet peeve of Sam).
+\usepackage{hyperref} % Required to include URLs
+\usepackage{xcolor} % Required to turn URLs the correct colors.
+\usepackage{listings} % Required to display code.
+\usepackage{bm} % Required to make vectors bold.
+\usepackage{titlesec}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% Page settings                                              
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Set up page dimensions.
+\geometry{
+    paper=letterpaper, % 8.5 x 11 paper.
+	top=1in, % Top margin.
+	bottom=1in, % Bottom margin.
+	left=1in, % Left margin.
+	right=1in, % Right margin.
+}
+ % Set up code display settings
+\lstset{
+frame = single, % Box the code
+numbers=left % Show line numbers
+}
+% Set up line and paragraph spacing
+\setlength{\parindent}{0em} % Sets paragraph indentation
+\setlength{\parskip}{1em} % Sets paragraph spacing
+\linespread{1.0} % Sets line spacing
+
+% Document attributes
+\title{Assignment Template}
+\author{Your Name Here}
+\date{\today}
+
+% Section formatting
+\titleformat{\section}{\normalfont\Large\bfseries}{}{0em}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Begin the content which will be displayed in the output PDF
+% Only things in between \begin{document} and \end{document} actually show up on your paper!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+
+\section{Problem 1} % Problem 1
+Insert problem 1 here
+
+\subsection*{Solution}
+Insert solution 1 here
+
+\newpage
+\section{Problem 2} % Problem 2
+Insert problem 2 here
+
+\subsection*{Solution}
+Insert solution 2 here
+
+\newpage
+\section{Problem 3} % Problem 3
+Insert problem 3 here
+
+\subsection*{Solution}
+Insert solution 3 here
+
+\newpage
+\section{Problem 4} % Problem 4
+Insert problem 4 here
+
+\subsection*{Solution}
+Insert solution 4 here
+
+\end{document}
